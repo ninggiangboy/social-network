@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Ardalis.Specification" Version="8.0.0"/>
+        <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="8.0.0"/>
+        <PackageReference Include="AutoMapper" Version="13.0.1"/>
+        <PackageReference Include="Clerk.Net" Version="1.7.0"/>
+        <PackageReference Include="Clerk.Net.DependencyInjection" Version="1.7.0"/>
+        <PackageReference Include="FluentValidation" Version="11.10.0"/>
+        <PackageReference Include="MassTransit" Version="8.3.0"/>
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.3.0"/>
+        <PackageReference Include="MediatR" Version="12.4.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.8"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.10"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.8"/>
+        <PackageReference Include="StackExchange.Redis" Version="2.8.16"/>
+        <PackageReference Include="Syncfusion.PMML.Net.Core" Version="20.4.0.44"/>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,36 @@
+﻿services:
+  #  api:
+  #    image: api
+  #    build:
+  #      context: .
+  #      dockerfile: API/Dockerfile
+  postgres:
+    image: postgres:latest
+    container_name: prn-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: prn
+  redis:
+    image: redis:latest
+    container_name: prn-redis
+    ports:
+      - "6379:6379"
+  rabbitmq:
+    image: masstransit/rabbitmq
+    container_name: prn-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+#  typesense:
+#    image: typesense/typesense:27.1
+#    ports:
+#      - "8108:8108"
+#    environment:
+#      TYPESENSE_API_KEY: "xyz"
+#    command: >
+#      --data-dir /data
+#      --api-key=xyz
+#      --enable-cors
